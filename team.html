@@ -14,7 +14,8 @@
 <header class="site">
   <div class="nav">
     <a class="brand" href="index.html"><img src="assets/images/logo.png" alt="Cunci Lab logo">Cunci Lab</a>
-    <ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <ul id="navMenu">
       <li><a href="index.html">Home</a></li>
       <li><a href="projects.html">Projects</a></li>
       <li><a href="publications.html">Publications</a></li>
@@ -173,6 +174,12 @@
 <footer class="site">
   &copy; <span id="year"></span> Cunci Lab, University of Puerto Rico
 </footer>
-<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();
+const navToggle = document.getElementById('navToggle');
+const navMenu = document.getElementById('navMenu');
+navToggle.addEventListener('click', () => {
+  const isOpen = navMenu.classList.toggle('open');
+  navToggle.setAttribute('aria-expanded', isOpen);
+});</script>
 </body>
 </html>
