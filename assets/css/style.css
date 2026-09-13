@@ -29,7 +29,7 @@ header.site{position:relative;z-index:2;border-bottom:1px solid var(--line)}
 .equip-row:first-child{border-top:none}
 .equip-row .photos{display:flex;flex-direction:column;gap:.6rem}
 .equip-row .photos.two-up{flex-direction:row;flex-wrap:wrap}
-.equip-row .photos img{width:100%;aspect-ratio:4/3;border-radius:2px;display:block;object-fit:cover}
+.equip-row .photos img{width:100%;border-radius:2px;display:block;object-fit:cover}
 .equip-row .photos.two-up img{width:calc(50% - .3rem)}
 .equip-row .photo-pending{width:100%;aspect-ratio:4/3;background:var(--teal-pale);border-radius:2px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:.78rem;text-align:center;padding:.5rem}
 .equip-row h4{font-family:var(--serif);font-weight:500;font-size:1.05rem;margin:0 0 .5rem;color:var(--ink)}
