@@ -1,5 +1,5 @@
 :root{
-  --paper:#F7F5F0; --ink:#191F27; --muted:#666F79;
+  --paper:#F7F5F0; --paper-tint:#EFECE4; --ink:#191F27; --muted:#666F79;
   --teal:#1F6F78; --teal-dark:#123B41; --teal-pale:#E4EFEE;
   --copper:#B8743C;
   --line:#E1DDD2;
@@ -29,7 +29,7 @@ header.site{position:relative;z-index:2;border-bottom:1px solid var(--line)}
 .equip-row:first-child{border-top:none}
 .equip-row .photos{display:flex;flex-direction:column;gap:.6rem}
 .equip-row .photos.two-up{flex-direction:row;flex-wrap:wrap}
-.equip-row .photos img{width:100%;border-radius:2px;display:block;object-fit:cover}
+.equip-row .photos img{width:100%;aspect-ratio:4/3;border-radius:2px;display:block;object-fit:cover}
 .equip-row .photos.two-up img{width:calc(50% - .3rem)}
 .equip-row .photo-pending{width:100%;aspect-ratio:4/3;background:var(--teal-pale);border-radius:2px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:.78rem;text-align:center;padding:.5rem}
 .equip-row h4{font-family:var(--serif);font-weight:500;font-size:1.05rem;margin:0 0 .5rem;color:var(--ink)}
@@ -55,6 +55,7 @@ header.site{position:relative;z-index:2;border-bottom:1px solid var(--line)}
 .page-head p{color:var(--muted);font-size:1rem;margin:0;max-width:75ch}
 
 .block, .section{max-width:1120px;margin:0 auto;padding:3.5rem 2rem}
+.block.tint{background:var(--paper-tint);border-radius:4px}
 .block h2, .section-head h2{font-family:var(--serif);font-weight:500;font-size:1.6rem;margin:0 0 2rem}
 .section-head{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:2rem}
 .section-head span{font-size:.75rem;color:var(--muted)}
@@ -77,8 +78,9 @@ header.site{position:relative;z-index:2;border-bottom:1px solid var(--line)}
 .project-text p{margin:0;max-width:70ch}
 
 .pubs{list-style:none;margin:0;padding:0}
-.pubs li{padding:1.1rem 0;border-top:1px solid var(--line);font-size:.92rem;color:var(--ink)}
+.pubs li{padding:1.3rem 0;border-top:1px solid var(--line);font-size:.92rem;color:var(--ink);line-height:1.7}
 .pubs li:first-child{border-top:none}
+.pubs b{color:var(--copper)}
 
 .pi-card{display:grid;grid-template-columns:150px 1fr;gap:2rem;align-items:center;background:var(--teal-pale);border-radius:2px;padding:2rem;margin-bottom:2.5rem}
 .pi-card img{width:100%;border-radius:2px;display:block}
