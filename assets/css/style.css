@@ -39,7 +39,7 @@ header.site{position:relative;z-index:2;border-bottom:1px solid var(--line)}
 .hero{display:grid;grid-template-columns:1.05fr .95fr;gap:0;max-width:1120px;margin:0 auto;padding:2.5rem 2rem 1rem;position:relative;z-index:2;pointer-events:none}
 .hero a{pointer-events:auto}
 .hero-text{max-width:520px;align-self:center;padding-top:2rem}
-.eyebrow{font-size:.78rem;color:var(--copper);font-weight:600;margin:0 0 1.1rem;display:flex;align-items:center;gap:.5rem}
+.eyebrow{font-size:.78rem;color:var(--copper);font-weight:600;margin:0 0 1.1rem;display:flex;align-items:center;gap:.5rem;width:100%}
 .eyebrow::before{content:'';width:18px;height:1px;background:var(--copper)}
 .hero h1{font-family:var(--serif);font-weight:500;font-size:2.6rem;line-height:1.1;margin:0 0 1.3rem;letter-spacing:-.01em}
 .hero p{color:var(--muted);font-size:1.05rem;margin:0 0 2rem;max-width:38ch}
